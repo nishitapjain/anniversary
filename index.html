@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pradeep & Rajeshwari — 21 Years of Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff8f1;--rose:#d77b83;--deep:#753e50;--wine:#5c273c;--gold:#c5a36a;--ink:#3c2930;--pink:#f7dfe1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.22;background-image:radial-gradient(#c58a8a 0.6px,transparent .6px);background-size:18px 18px}
+main,.intro,.footer{position:relative;z-index:1}
+main{max-width:1120px;margin:auto;padding:0 28px}
+h1,h2,h3,.script{font-family:"Cormorant Garamond",serif}
+h1{font-weight:500;font-size:clamp(3.2rem,8vw,7.5rem);line-height:.92;margin:18px 0;color:var(--wine)}
+h2{font-size:clamp(2.3rem,5vw,4rem);font-weight:500;line-height:1;margin:0 0 18px;color:var(--wine)}
+p{line-height:1.8}
+a{color:inherit}
+.topline{text-align:center;padding:26px 0 10px;letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--deep)}
+.hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:42px;padding:50px 0 80px}
+.hero-copy{text-align:center}
+.hero-copy .kicker{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--rose)}
+.hero-copy .sub{max-width:420px;margin:26px auto;font-size:15px}
+.hero-img-wrap{position:relative;padding:18px;background:#fff;box-shadow:0 22px 55px #60303b20;transform:rotate(2deg)}
+.hero-img-wrap:before{content:"";position:absolute;left:30%;top:-16px;width:120px;height:32px;background:#e9c6a8aa;transform:rotate(-5deg)}
+.hero-img{width:100%;height:520px;object-fit:cover;display:block}
+.hero-img-wrap:after{content:"♡";position:absolute;right:-25px;bottom:-35px;font-size:75px;color:var(--rose);transform:rotate(15deg)}
+.button{display:inline-block;border:1px solid var(--rose);border-radius:50px;padding:12px 25px;text-decoration:none;color:var(--deep);letter-spacing:.08em;font-size:12px;text-transform:uppercase;transition:.25s}
+.button:hover{background:var(--rose);color:white}
+.section{padding:90px 0}
+.section-label{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(--rose);margin-bottom:14px}
+.center{text-align:center}
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.story-image{position:relative}
+.story-image img{width:100%;max-height:560px;object-fit:cover;padding:12px;background:#fff;box-shadow:0 18px 40px #60303b20;transform:rotate(-2deg)}
+.story-text{padding:20px}
+.story-text .script{font-size:2rem;color:var(--rose)}
+.timeline{max-width:760px;margin:50px auto 0;position:relative}
+.timeline:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(var(--pink),var(--gold),var(--pink))}
+.event{width:50%;padding:22px 38px;position:relative}
+.event:nth-child(even){margin-left:50%;text-align:left}
+.event:nth-child(odd){text-align:right}
+.event:after{content:"♡";position:absolute;top:30px;color:var(--rose);font-size:22px;background:var(--cream)}
+.event:nth-child(odd):after{right:-12px}
+.event:nth-child(even):after{left:-12px}
+.event .year{font-family:"Cormorant Garamond";font-size:2rem;color:var(--gold)}
+.event h3{font-size:1.65rem;margin:6px 0;color:var(--wine)}
+.gallery-intro{max-width:650px;margin:0 auto 38px}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.frame {
+  background: white;
+  padding: 8px 8px 38px;
+  box-shadow: 0 12px 30px #60303b16;
+  position: relative;
+  cursor: pointer;
+  transition: transform .3s;
+}
+.frame:hover{transform:translateY(-6px)!important}
+.frame img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+/* Keep the photos consistently sized and cropped. */
+.frame .caption{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:"Cormorant Garamond";font-size:1.25rem;color:var(--deep)}
+/* Scattered scrapbook placement — no rotation, consistent photo sizing */
+.frame:nth-child(1){grid-column:span 7;margin-top:10px}
+.frame:nth-child(2){grid-column:span 4;margin-top:65px}
+.frame:nth-child(3){grid-column:span 5;margin-top:5px}
+.frame:nth-child(4){grid-column:span 3;margin-top:80px}
+.frame:nth-child(5){grid-column:span 7;margin-top:20px}
+.frame:nth-child(6){grid-column:span 5;margin-top:70px}
+.frame:nth-child(7){grid-column:span 7;margin-top:0}
+.frame:nth-child(8){grid-column:span 5;margin-top:55px}
+.frame:nth-child(9){grid-column:span 6;margin-top:15px}
+.frame:nth-child(10){grid-column:span 3;margin-top:75px}
+.frame:nth-child(11){grid-column:span 3;margin-top:15px}
+.frame:nth-child(12){grid-column:span 7;margin-top:60px}
+.frame:nth-child(13){grid-column:span 5;margin-top:5px}
+.frame:nth-child(14){grid-column:span 4;margin-top:70px}
+.frame:nth-child(15){grid-column:span 8;margin-top:15px}
+.letter{max-width:800px;margin:30px auto;background:#fffdf8;padding:clamp(28px,6vw,65px);box-shadow:0 20px 55px #60303b16;position:relative;border:1px solid #f0e3d7}
+.letter:before{content:"";position:absolute;inset:12px;border:1px solid #ead7c8;pointer-events:none}
+.letter p{font-family:"Cormorant Garamond";font-size:1.35rem;line-height:1.8}
+.signature{font-size:2.5rem;color:var(--rose);text-align:right}
+.footer{text-align:center;padding:60px 20px 90px;color:var(--deep)}
+.footer .big-heart{font-size:40px;color:var(--rose);animation:pulse 1.8s infinite}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* Scroll-following decorative elements */
+.float-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:4}
+.floaty{position:absolute;will-change:transform;opacity:.6;filter:drop-shadow(0 2px 3px #a75b6c22);animation:sway 5s ease-in-out infinite}
+.floaty:nth-child(2n){animation-delay:-2s}
+.floaty:nth-child(3n){animation-delay:-3.5s}
+@keyframes sway{0%,100%{margin-left:0;rotate:-8deg}50%{margin-left:12px;rotate:8deg}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.sparkle{position:absolute;font-size:20px;color:var(--gold);animation:sparkle 4s ease-in-out infinite}
+@keyframes sparkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:.9;transform:scale(1.2)}}
+.lightbox{position:fixed;inset:0;background:#2b1724ed;display:none;align-items:center;justify-content:center;z-index:10;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border:12px solid white}
+.lightbox button{position:absolute;background:none;border:0;color:white;font-size:36px;cursor:pointer}
+.lightbox .close{top:20px;right:28px}
+.lightbox .prev{left:20px}.lightbox .next{right:20px}
+@media(max-width:750px){
+ main{padding:0 18px}.hero{grid-template-columns:1fr;min-height:auto;padding:35px 0 65px;gap:30px}.hero-img{height:390px}.hero-img-wrap{max-width:520px;margin:auto}
+ .story{grid-template-columns:1fr}.story-text{padding:5px}.section{padding:65px 0}
+ .timeline:before{left:12px}.event,.event:nth-child(even){width:100%;margin:0;text-align:left;padding:22px 25px 22px 42px}
+ .event:nth-child(odd):after,.event:nth-child(even):after{left:1px;right:auto}
+ .gallery{grid-template-columns:1fr;gap:18px}.frame,.frame:nth-child(n){grid-column:1;transform:none!important;margin-top:0!important}.frame img{height:clamp(230px,70vw,390px)}
+ h1{font-size:clamp(3rem,14vw,5.4rem)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+<div class="topline">A little celebration of forever · 20 November 2026</div>
+<main>
+<section class="hero">
+<div class="hero-copy reveal">
+<div class="kicker">Twenty-one years · and counting</div>
+<h1>Pradeep<br><span style="color:var(--rose)">&amp;</span><br>Rajeshwari</h1>
+<p class="sub">Two people, one beautiful life, and a thousand little moments that made it theirs.</p>
+<a class="button" href="#memories">Wander through their memories ↓</a>
+</div>
+<div class="hero-img-wrap reveal"><img class="hero-img" src="photos/photo7.jpeg" alt="A favourite photograph of Pradeep and Rajeshwari"></div>
+</section>
+<section class="section story reveal" id="story">
+<div class="story-image"><img src="photos/photo6.jpeg" alt="A memory of the couple"></div>
+<div class="story-text">
+<div class="section-label">The story of us</div><h2>Somehow,<br>it was always<br><em>you.</em></h2>
+<p>Twenty-one years of choosing each other. Of laughter that fills a room, little traditions, big dreams, and the quiet kind of love that makes a house feel like home.</p>
+<p class="script">And the best chapters are still ahead.</p>
+</div>
+</section>
+<section class="section reveal">
+<div class="center"><div class="section-label">A lifetime in little chapters</div><h2>Look how far love has come</h2></div>
+<div class="timeline">
+<div class="event"><div class="year">Chapter 01</div><h3>The beginning</h3><p>Two hearts finding their way into one story.</p></div>
+<div class="event"><div class="year">Chapter 02</div><h3>Building a home</h3><p>Turning ordinary days into the things we'll always remember.</p></div>
+<div class="event"><div class="year">Chapter 03</div><h3>Growing together</h3><p>Through every season, every adventure, every little plot twist.</p></div>
+<div class="event"><div class="year">Chapter 21</div><h3>Still choosing love</h3><p>Twenty-one years later—and a lifetime still waiting.</p></div>
+</div>
+</section>
+<section class="section reveal" id="memories">
+<div class="center"><div class="section-label">The photo album</div><h2>Little moments, big love</h2><p class="gallery-intro">The candid ones, the celebrations, the blurry pictures that somehow mean the most. Tap a photo to see it a little bigger.</p></div>
+<div class="gallery">
+<div class="frame"><img src="photos/photo1.jpeg" alt="Memory 1"><div class="caption">A moment to keep ♡</div></div>
+<div class="frame"><img src="photos/photo2.jpeg" alt="Memory 2"><div class="caption">Just us</div></div>
+<div class="frame"><img src="photos/photo3.jpeg" alt="Memory 3"><div class="caption">The good days</div></div>
+<div class="frame"><img src="photos/photo4.jpeg" alt="Memory 4"><div class="caption">Always laughing</div></div>
+<div class="frame"><img src="photos/photo5.jpeg" alt="Memory 5"><div class="caption">Little adventures</div></div>
+<div class="frame"><img src="photos/photo8.jpeg" alt="Memory 6"><div class="caption">Together is a place</div></div>
+<div class="frame"><img src="photos/photo9.jpeg" alt="Memory 7"><div class="caption">A favourite kind of day</div></div>
+<div class="frame"><img src="photos/photo10.jpeg" alt="Memory 8"><div class="caption">Made of memories</div></div>
+<div class="frame"><img src="photos/photo11.jpeg" alt="Memory 9"><div class="caption">Our people, our joy</div></div>
+<div class="frame"><img src="photos/photo12.jpeg" alt="Memory 10"><div class="caption">And another one ♡</div></div>
+<div class="frame"><img src="photos/photo13.jpeg" alt="Memory 11"><div class="caption">A little magic</div></div>
+<div class="frame"><img src="photos/photo14.jpeg" alt="Memory 12"><div class="caption">Forever favourites</div></div>
+<div class="frame"><img src="photos/photo15.jpeg" alt="Memory 13"><div class="caption">Here's to us</div></div>
+<div class="frame"><img src="photos/photo6.jpeg" alt="Memory 14"><div class="caption">Home, wherever</div></div>
+<div class="frame"><img src="photos/photo7.jpeg" alt="Memory 15"><div class="caption">Twenty-one & timeless</div></div>
+</div>
+</section>
+<section class="section reveal">
+<div class="center"><div class="section-label">A note from the heart</div><h2>For the two of you</h2></div>
+<div class="letter">
+<p>Twenty-one years is a thousand things: little acts of kindness, familiar smiles, shared jokes, sacrifices nobody saw, and a love that kept showing up.</p>
+<p>Twenty-one years ago, you started a story that somehow became our entire world.
+
+We get to see what love looks like not just in big gestures, but in the everyday things — in the care, the patience, the laughter, and in Dad treating Mom like his princess, year after year.</p>
+
+<p>Thank you for building a home that we get to grow up in. Thank you for being each other's person, and for being ours, too. We may not say it enough, but so much of who we are comes from the love you've given us.
+
+We hope the years ahead bring you even more adventures, silly moments, long conversations, good health, and reasons to fall in love with each other all over again.
+
+If we could choose our parents in every lifetime, we'd choose you. Every single time.</p>
+<p>Here's to the beautiful life you've built, to the memories that make you smile, and to every new adventure that is yet to come. May the years ahead be just as warm, silly, wonderful, and full of love.</p>
+<p>Happy 21st anniversary!</p>
+<div class="signature">With all our love ♡</div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="big-heart">♥</div><p>Pradeep &amp; Rajeshwari</p><small>20 · 11 · 2005 — forever</small></footer>
+<div class="lightbox" id="lightbox"><button class="close" aria-label="Close">×</button><button class="prev" aria-label="Previous">‹</button><img id="lightboxImage" src="" alt=""><button class="next" aria-label="Next">›</button></div>
+<script>
+/* A soft stream of floating hearts, flowers, sparkles and bows that drift with the page. */
+const layer=document.getElementById('floatLayer');
+const decor=['♡','♥','✦','✧','⋆','🎀','❥','★','☆','💗','🎀','✶'];
+for(let i=0;i<42;i++){
+ const el=document.createElement('span');el.className='floaty';
+ el.textContent=decor[i%decor.length];
+ el.style.left=(3+Math.random()*94)+'%';
+ el.style.top=(5+Math.random()*90)+'%';
+ el.style.fontSize=(16+Math.random()*31)+'px';
+ el.style.color=['#d77b83','#c5a36a','#b97590','#e4a8a9'][i%4];
+ el.style.opacity=.25+Math.random()*.45;
+ layer.appendChild(el);
+}
+for(let i=0;i<20;i++){const s=document.createElement('span');s.className='sparkle';s.textContent='✦';s.style.left=(5+Math.random()*90)+'%';s.style.top=(8+Math.random()*90)+'%';s.style.animationDelay=(Math.random()*4)+'s';layer.appendChild(s)}
+function floatScroll(){const y=window.scrollY;layer.querySelectorAll('.floaty').forEach((e,i)=>{e.style.transform=`translateY(${Math.sin(y*.003+i)*12-y*(.025+(i%5)*.008)}px) rotate(${Math.sin(y*.002+i)*15}deg)`});layer.querySelectorAll('.sparkle').forEach((e,i)=>e.style.transform=`translateY(${Math.sin(y*.002+i)*18-y*.015}px) scale(${.8+Math.sin(y*.004+i)*.25})`)}
+window.addEventListener('scroll',floatScroll,{passive:true});floatScroll();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const frames=[...document.querySelectorAll('.frame img')],box=document.getElementById('lightbox'),big=document.getElementById('lightboxImage');let index=0;
+function openAt(i){index=(i+frames.length)%frames.length;big.src=frames[index].src;big.alt=frames[index].alt;box.classList.add('open')}
+function close(){box.classList.remove('open')}
+frames.forEach((im,i)=>im.parentElement.addEventListener('click',()=>openAt(i)));
+box.querySelector('.close').onclick=close;box.querySelector('.prev').onclick=()=>openAt(index-1);box.querySelector('.next').onclick=()=>openAt(index+1);box.addEventListener('click',e=>{if(e.target===box)close()});
+document.addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')openAt(index-1);if(e.key==='ArrowRight')openAt(index+1)});
+</script>
+</body>
+</html>
